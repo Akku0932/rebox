@@ -10,7 +10,7 @@ import { ScrollButton } from "@/components/scroll-button"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white overflow-x-hidden">
+    <div className="bg-gradient-to-b from-green-50 to-white overflow-x-hidden overflow-y-hidden">
       <HeroSection />
       <StatsSection />
       <ProductPreview />
@@ -34,7 +34,7 @@ function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative flex items-center justify-center pt-20">
       <div className="container mx-auto px-2 sm:px-4 grid lg:grid-cols-2 gap-4 sm:gap-8 items-center w-full max-w-full">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -85,16 +85,6 @@ function HeroSection() {
           <PaperToBoxAnimation step={animationStep} />
         </div>
       </div>
-
-      <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden sm:block"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-      >
-        <div className="w-6 h-10 border-2 border-green-600 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-green-600 rounded-full mt-2"></div>
-        </div>
-      </motion.div>
     </section>
   )
 }

@@ -11,7 +11,7 @@ import { ScrollButton } from "@/components/scroll-button"
 
 export default function SustainabilityPage() {
   return (
-    <div className="min-h-screen bg-white pt-20">
+    <div className="min-h-screen bg-white pt-20 overflow-x-hidden">
       <HeroSection />
       <CommitmentSection />
       <InitiativesSection />
@@ -28,7 +28,7 @@ function HeroSection() {
   return (
     <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
             <Badge className="mb-4 bg-green-100 text-green-800">
               <Globe className="w-4 h-4 mr-2" />
@@ -141,7 +141,7 @@ function CommitmentSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {commitments.map((commitment, index) => (
             <motion.div
               key={commitment.title}
@@ -208,7 +208,7 @@ function InitiativesSection() {
               transition={{ duration: 0.8, delay: index * 0.2 }}
             >
               <div
-                className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}
               >
                 <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
                   <Badge className="mb-4 bg-green-100 text-green-800">Initiative {index + 1}</Badge>
@@ -262,7 +262,7 @@ function ImpactMetrics() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {metrics.map((metric, index) => (
             <motion.div
               key={metric.label}
@@ -321,7 +321,7 @@ function CertificationsSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {certifications.map((cert, index) => (
             <motion.div
               key={cert.name}
@@ -458,7 +458,7 @@ function FutureGoals() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {goals.map((goal, index) => (
             <motion.div
               key={goal.year}
