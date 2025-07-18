@@ -8,14 +8,6 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-    domains: ['*'],  // Allow all domains for development
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
-    formats: ['image/avif', 'image/webp'], // Only these formats are allowed in the formats array
   },
 }
 
