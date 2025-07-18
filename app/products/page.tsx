@@ -273,7 +273,7 @@ function ProductListItem({ product }: { product: any }) {
           <div className="flex">
             <div className="relative w-32 md:w-48 h-24 md:h-32 overflow-hidden">
               <img
-                src={product.image ? product.image : "/placeholder.svg"}
+                src={product.image ? product.image : "/Greener_Future.png"}
                 alt={product.name}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />

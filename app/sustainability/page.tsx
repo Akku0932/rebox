@@ -75,7 +75,7 @@ function HeroSection() {
           >
             <div className="relative">
               <img
-                src="/placeholder.svg?height=500&width=600"
+                src="/sustain.png?height=500&width=600"
                 alt="Sustainable packaging"
                 className="rounded-lg shadow-2xl"
               />
@@ -172,19 +172,19 @@ function InitiativesSection() {
     {
       title: "Zero Waste Manufacturing",
       description: "Our production process generates zero waste through comprehensive recycling and reuse programs.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/ZERO.png?height=300&width=400",
       impact: "95% waste reduction achieved",
     },
     {
       title: "Renewable Energy Transition",
       description: "Transitioning our facilities to 100% renewable energy sources by 2025.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/eco.png?height=300&width=400",
       impact: "60% renewable energy currently",
     },
     {
       title: "Biodegradable Coatings",
       description: "Developing innovative biodegradable coatings that break down naturally in the environment.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/comp.png?height=300&width=400",
       impact: "3 months biodegradation time",
     },
   ]

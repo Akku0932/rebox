@@ -324,12 +324,17 @@ export default function ContactPage() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} className="mt-16">
           <Card className="overflow-hidden">
             <div className="grid lg:grid-cols-2">
-              <div className="bg-gray-200 h-64 lg:h-auto flex items-center justify-center">
-                <div className="text-center text-gray-600">
-                  <MapPin className="w-12 h-12 mx-auto mb-4" />
-                  <p className="text-lg font-medium">Interactive Map</p>
-                  <p className="text-sm">Noida, Uttar Pradesh, India</p>
-                </div>
+              <div className="w-full h-64 lg:h-full bg-white flex items-center justify-center overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.689624002367!2d77.53848277488287!3d28.42862079331242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc10063b6cddb%3A0x613a679aed03f982!2sK-46%20Site%205%20Kasna%2C%20Greater%20Noida!5e0!3m2!1sen!2sin!4v1752837235160!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, minHeight: '256px' }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Reboxes India Pvt. Ltd. Map"
+                ></iframe>
               </div>
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Visit Our Facility</h3>
@@ -339,10 +344,9 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-gray-900">Address</p>
                       <p className="text-gray-600">
-                        Reboxes India Pvt. Ltd.
-                        <br />
-                        Noida, Uttar Pradesh, India
-                        <br />
+                        Reboxes India Pvt. Ltd.<br />
+                        K-46 Site 5 Kasna, Greater Noida,<br />
+                        Uttar Pradesh, India<br />
                         PIN: 201301
                       </p>
                     </div>
@@ -374,7 +378,12 @@ function ContactInfoCard() {
     {
       icon: MapPin,
       title: "Address",
-      details: ["Noida, Uttar Pradesh, India", "PIN: 201301"],
+      details: [
+        "Reboxes India Pvt. Ltd.",
+        "K-46 Site 5 Kasna, Greater Noida,",
+        "Uttar Pradesh, India",
+        "PIN: 201301",
+      ],
     },
     {
       icon: Phone,

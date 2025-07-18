@@ -557,7 +557,7 @@ function SustainabilityPreview() {
           >
             <div className="relative">
               <img
-                src="/placeholder.svg?height=400&width=500"
+                src="/Greener_Future.png?height=400&width=500"
                 alt="Sustainable packaging"
                 className="rounded-lg shadow-xl w-full"
               />
