@@ -1,67 +1,130 @@
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
 
+
+
 @layer base {
+
   :root {
+
     --background: 0 0% 100%;
+
     --foreground: 222.2 84% 4.9%;
+
     --card: 0 0% 100%;
+
     --card-foreground: 222.2 84% 4.9%;
+
     --popover: 0 0% 100%;
+
     --popover-foreground: 222.2 84% 4.9%;
+
     --primary: 142.1 76.2% 36.3%;
+
     --primary-foreground: 355.7 100% 97.3%;
+
     --secondary: 210 40% 98%;
+
     --secondary-foreground: 222.2 84% 4.9%;
+
     --muted: 210 40% 98%;
+
     --muted-foreground: 215.4 16.3% 46.9%;
+
     --accent: 210 40% 98%;
+
     --accent-foreground: 222.2 84% 4.9%;
+
     --destructive: 0 84.2% 60.2%;
+
     --destructive-foreground: 210 40% 98%;
+
     --border: 214.3 31.8% 91.4%;
+
     --input: 214.3 31.8% 91.4%;
+
     --ring: 142.1 76.2% 36.3%;
+
     --radius: 0.5rem;
+
   }
+
+
 
   .dark {
+
     --background: 222.2 84% 4.9%;
+
     --foreground: 210 40% 98%;
+
     --card: 222.2 84% 4.9%;
+
     --card-foreground: 210 40% 98%;
+
     --popover: 222.2 84% 4.9%;
+
     --popover-foreground: 210 40% 98%;
+
     --primary: 142.1 76.2% 36.3%;
+
     --primary-foreground: 355.7 100% 97.3%;
+
     --secondary: 217.2 32.6% 17.5%;
+
     --secondary-foreground: 210 40% 98%;
+
     --muted: 217.2 32.6% 17.5%;
+
     --muted-foreground: 215 20.2% 65.1%;
+
     --accent: 217.2 32.6% 17.5%;
+
     --accent-foreground: 210 40% 98%;
+
     --destructive: 0 62.8% 30.6%;
+
     --destructive-foreground: 210 40% 98%;
+
     --border: 217.2 32.6% 17.5%;
+
     --input: 217.2 32.6% 17.5%;
+
     --ring: 142.1 76.2% 36.3%;
+
   }
+
 }
+
+
 
 @layer base {
+
   * {
+
     @apply border-border;
+
   }
+
   body {
+
     @apply bg-background text-foreground;
+
   }
+
 }
+
+
 
 html {
+
   scroll-behavior: smooth;
+
 }
 
+<<<<<<< HEAD
 html, body {
   height: auto !important;
   min-height: 100% !important;
@@ -72,116 +135,252 @@ body, #__next, main, div[role="main"] {
   outline: 2px solid red !important;
 }
 
-.transform-gpu {
-  transform: translate3d(0, 0, 0);
+=======
+
+
+html, body {
+
+  height: auto !important;
+
+  min-height: 100% !important;
+
+  overflow-y: auto !important;
+
 }
+
+
+
+body, #__next, main, div[role="main"] {
+
+  outline: 2px solid red !important;
+
+}
+
+
+
+>>>>>>> e9e8336ff83885363a93fdb9d50eeec0bccc4b6a
+.transform-gpu {
+
+  transform: translate3d(0, 0, 0);
+
+}
+
+
 
 .line-clamp-2 {
+
   display: -webkit-box;
+
   -webkit-line-clamp: 2;
+
   -webkit-box-orient: vertical;
+
   overflow: hidden;
+
 }
+
+
 
 .line-clamp-3 {
+
   display: -webkit-box;
+
   -webkit-line-clamp: 3;
+
   -webkit-box-orient: vertical;
+
   overflow: hidden;
+
 }
+
+
 
 /* Custom scrollbar */
+
 ::-webkit-scrollbar {
+
   width: 8px;
+
 }
+
+
 
 ::-webkit-scrollbar-track {
+
   background: #f1f1f1;
+
 }
+
+
 
 ::-webkit-scrollbar-thumb {
+
   background: #16a34a;
+
   border-radius: 4px;
+
 }
+
+
 
 ::-webkit-scrollbar-thumb:hover {
+
   background: #15803d;
+
 }
+
+
 
 /* Loading animations */
+
 @keyframes shimmer {
+
   0% {
+
     background-position: -200px 0;
+
   }
+
   100% {
+
     background-position: calc(200px + 100%) 0;
+
   }
+
 }
+
+
 
 .shimmer {
+
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+
   background-size: 200px 100%;
+
   animation: shimmer 1.5s infinite;
+
 }
+
+
 
 /* Mobile responsiveness improvements */
+
 @media (max-width: 640px) {
+
   .container {
+
     padding-left: 1rem;
+
     padding-right: 1rem;
+
   }
+
+
 
   /* Ensure text doesn't overflow on small screens */
+
   h1,
+
   h2,
+
   h3,
+
   h4,
+
   h5,
+
   h6 {
+
     word-wrap: break-word;
+
     hyphens: auto;
+
   }
+
+
 
   /* Improve button spacing on mobile */
+
   .space-y-4 > * + * {
+
     margin-top: 1rem;
+
   }
+
+
 
   /* Better mobile navigation */
+
   .mobile-menu-container {
+
     position: relative;
+
     z-index: 60;
+
   }
+
 }
+
+
 
 /* Improve touch targets for mobile */
+
 @media (max-width: 768px) {
+
   button,
+
   a {
+
     min-height: 44px;
+
     min-width: 44px;
+
   }
+
+
 
   /* Better spacing for mobile cards */
+
   .grid > * {
+
     margin-bottom: 1rem;
+
   }
+
 }
 
+
+
 /* Ensure proper scaling on all devices */
+
 @media (max-width: 1024px) {
+
   .text-6xl {
+
     font-size: 3rem;
+
     line-height: 1;
+
   }
+
+
 
   .text-5xl {
+
     font-size: 2.5rem;
+
     line-height: 1;
+
   }
 
+
+
   .text-4xl {
+
     font-size: 2rem;
+
     line-height: 1.1;
+
   }
+
 }

@@ -333,7 +333,11 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+<<<<<<< HEAD
                   title="Reboxes India Private Limited Map"
+=======
+                  title="Reboxes India Pvt. Ltd. Map"
+>>>>>>> e9e8336ff83885363a93fdb9d50eeec0bccc4b6a
                 ></iframe>
               </div>
               <CardContent className="p-8">
@@ -344,7 +348,11 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-gray-900">Address</p>
                       <p className="text-gray-600">
+<<<<<<< HEAD
                         Reboxes India Private Limited.<br />
+=======
+                        Reboxes India Pvt. Ltd.<br />
+>>>>>>> e9e8336ff83885363a93fdb9d50eeec0bccc4b6a
                         K-46 Site 5 Kasna, Greater Noida,<br />
                         Uttar Pradesh, India<br />
                         PIN: 201301
@@ -379,7 +387,11 @@ function ContactInfoCard() {
       icon: MapPin,
       title: "Address",
       details: [
+<<<<<<< HEAD
         "Reboxes India Private Limited",
+=======
+        "Reboxes India Pvt. Ltd.",
+>>>>>>> e9e8336ff83885363a93fdb9d50eeec0bccc4b6a
         "K-46 Site 5 Kasna, Greater Noida,",
         "Uttar Pradesh, India",
         "PIN: 201301",
