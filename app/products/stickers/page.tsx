@@ -8,8 +8,10 @@ const stickers = [
   { name: "Partial", description: "Partial stickers for selective application.", image: "/part.jpg" },
   { name: "Stitchable", description: "Stitchable stickers for fabric and apparel.", image: "/stch_able_stciker.jpg" },
   { name: "Heat Fusing", description: "Heat fusing stickers for durable adhesion.", image: "/heat_fusing_sticker.jpg" },
-  { name: "Dashboard", description: "Dashboard stickers for automotive and industrial use.", image: "/dashboard_decals.jpg" },
   { name: "Graphics/Decals", description: "Custom graphics and decals for versatile applications.", image: "/dashboard_decals.jpg" },
+  { name: "Vinyl Sticker", description: " Made from PVC, a synthetic plastic material renowned for its durability.", image: "/safety.jpg" },
+  { name: "PC Front Sticker", description: "3M adhesive decorations designed to personalize and enhance the appearance of computer hardware.", image: "/front.png" },
+  { name: "Polycarbonate", description: "Premium polycarbonate dome stickers with 3D effect for enhanced visual appeal and durability.", image: "/PC.png" },
 ]
 
 export default function StickersPage() {

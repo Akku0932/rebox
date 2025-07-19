@@ -10,7 +10,7 @@ import { ScrollButton } from "@/components/scroll-button"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white overflow-x-hidden">
+    <div className="bg-gradient-to-b from-green-50 to-white overflow-x-hidden overflow-y-hidden">
       <HeroSection />
       <StatsSection />
       <ProductPreview />
@@ -34,7 +34,7 @@ function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative flex items-center justify-center pt-20">
       <div className="container mx-auto px-2 sm:px-4 grid lg:grid-cols-2 gap-4 sm:gap-8 items-center w-full max-w-full">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -54,7 +54,7 @@ function HeroSection() {
 
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
             Reboxes India Pvt. Ltd. transforms sustainable materials into premium packaging solutions. Founded in 2020
-            in Noida, we specialize in custom pouches, stickers, labels, and eco-friendly packaging.
+            in Noida, we specialize in custom , stickers, labels, and eco-friendly packaging.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -85,16 +85,6 @@ function HeroSection() {
           <PaperToBoxAnimation step={animationStep} />
         </div>
       </div>
-
-      <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden sm:block"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-      >
-        <div className="w-6 h-10 border-2 border-green-600 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-green-600 rounded-full mt-2"></div>
-        </div>
-      </motion.div>
     </section>
   )
 }
@@ -557,7 +547,7 @@ function SustainabilityPreview() {
           >
             <div className="relative">
               <img
-                src="/placeholder.svg?height=400&width=500"
+                src="/Greener_Future.png?height=400&width=500"
                 alt="Sustainable packaging"
                 className="rounded-lg shadow-xl w-full"
               />

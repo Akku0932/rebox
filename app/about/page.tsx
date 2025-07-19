@@ -10,7 +10,7 @@ import { ScrollButton } from "@/components/scroll-button"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white pt-20">
+    <div className="min-h-screen bg-white pt-20 overflow-x-hidden">
       <HeroSection />
       <CompanyOverview />
       <MissionVisionValues />
@@ -27,7 +27,7 @@ function HeroSection() {
   return (
     <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
             <Badge className="mb-4 bg-green-100 text-green-800">
               <Building className="w-4 h-4 mr-2" />
@@ -74,7 +74,7 @@ function HeroSection() {
           >
             <div className="relative">
               <img
-                src="/placeholder.svg?height=500&width=600"
+                src="/box.png?height=500&width=600"
                 alt="Reboxes India facility"
                 className="rounded-lg shadow-2xl"
               />
@@ -100,7 +100,7 @@ function HeroSection() {
 function CompanyOverview() {
   const stats = [
     { icon: Calendar, label: "Founded", value: "July 23, 2020" },
-    { icon: MapPin, label: "Location", value: "Noida, Uttar Pradesh" },
+    { icon: MapPin, label: "Location", value: "Reboxes India Pvt. Ltd. K-46 Site 5 Kasna, Greater Noida, Uttar Pradesh, India PIN: 201301" },
     { icon: Building, label: "CIN", value: "U21000UP2020PTC131548" },
     { icon: Factory, label: "Industry", value: "Paper & Packaging" },
   ]
@@ -116,7 +116,7 @@ function CompanyOverview() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -142,25 +142,22 @@ function CompanyOverview() {
           whileInView={{ opacity: 1, y: 0 }}
           className="bg-white rounded-lg p-8 shadow-sm"
         >
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Story</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">About us</h3>
               <p className="text-gray-600 mb-4">
-                Founded on July 23, 2020, in the bustling city of Noida, Uttar Pradesh, Reboxes India Pvt. Ltd. emerged
-                with a clear vision: to revolutionize the packaging industry through sustainable innovation.
+              REBOXES INDIA as a one stop solution provider to its customers. Company's incorporation of various print technologies like - Offset, Digital & Label printing in roll to roll classify REBOXES INDIA, as an exclusive printer to be able to cater to all the printing & packaging needs of customers under a single roof. The company is equipped with latest and best of line automated machines supported by in-house testing and quality assurance facilities to produce quality products. REBOXES INDIA continual efforts in cost effective operations, product up gradation, new product development, innovation and technology has led the company not only to be able to provide innovative products and solutions from time to time to its customers but maintain long term relationships with them by shear consistency in quality and services. REBOXES INDIA one of the best machinery from JAPAN GERMANY & ITALY.
               </p>
               <p className="text-gray-600 mb-4">
-                Operating under CIN U21000UP2020PTC131548, we specialize in the manufacturing of paper products, custom
-                boxes, and cartons, serving the paper & paper-products sector with dedication and expertise.
+              
               </p>
               <p className="text-gray-600">
-                Our commitment to sustainability and quality has made us a trusted partner for businesses seeking
-                eco-friendly packaging solutions that don't compromise on durability or aesthetics.
+             
               </p>
             </div>
             <div className="relative">
               <img
-                src="/placeholder.svg?height=400&width=500"
+                src="/story.png?height=400&width=500"
                 alt="Our manufacturing process"
                 className="rounded-lg shadow-lg"
               />
@@ -205,7 +202,7 @@ function MissionVisionValues() {
           <p className="text-xl text-gray-600">The principles that drive our commitment to excellence</p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {items.map((item, index) => (
             <motion.div
               key={item.title}
@@ -268,9 +265,9 @@ function Timeline() {
           <p className="text-xl text-gray-600">Key milestones in our growth story</p>
         </motion.div>
 
-        <div className="relative">
+        {/* Timeline for desktop/tablet */}
+        <div className="relative hidden md:block">
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-green-200"></div>
-
           {milestones.map((milestone, index) => (
             <motion.div
               key={milestone.year}
@@ -292,8 +289,33 @@ function Timeline() {
                   </CardContent>
                 </Card>
               </div>
-
               <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-green-600 rounded-full border-4 border-white"></div>
+            </motion.div>
+          ))}
+        </div>
+        {/* Timeline for mobile */}
+        <div className="md:hidden flex flex-col gap-8 relative">
+          <div className="absolute left-4 top-0 bottom-0 w-1 bg-green-200 z-0" style={{height: '100%'}}></div>
+          {milestones.map((milestone, index) => (
+            <motion.div
+              key={milestone.year}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="relative flex items-start z-10"
+            >
+              <div className="flex flex-col items-center mr-4">
+                <div className="w-6 h-6 bg-green-600 rounded-full border-4 border-white flex items-center justify-center text-white font-bold mb-2">
+                  {milestone.year.slice(-2)}
+                </div>
+                {/* vertical line handled by parent */}
+              </div>
+              <Card className="flex-1 shadow-lg">
+                <CardContent className="p-4">
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">{milestone.title}</h3>
+                  <p className="text-gray-600 text-sm">{milestone.description}</p>
+                </CardContent>
+              </Card>
             </motion.div>
           ))}
         </div>
@@ -311,7 +333,7 @@ function TeamSection() {
       description: "Visionary leader with 15+ years in packaging industry",
     },
     {
-      name: "Pinki Tyagi",
+      name: "Krishna kumar",
       position: "Head of Operations",
       image: "/placeholder.svg?height=300&width=300",
       description: "Operations expert ensuring quality and efficiency",
@@ -323,7 +345,7 @@ function TeamSection() {
       description: "Environmental advocate driving our green initiatives",
     },
     {
-      name: "Sneha Gupta",
+      name: "Shourya",
       position: "Design Manager",
       image: "/placeholder.svg?height=300&width=300",
       description: "Creative professional bringing brands to life",
@@ -338,7 +360,7 @@ function TeamSection() {
           <p className="text-xl text-gray-600">The passionate professionals behind our success</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {team.map((member, index) => (
             <motion.div
               key={member.name}
@@ -402,7 +424,7 @@ function AchievementsSection() {
           <p className="text-xl text-green-100">Recognition and milestones that define our excellence</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {achievements.map((achievement, index) => (
             <motion.div
               key={achievement.title}
@@ -441,7 +463,7 @@ function QualityAssurance() {
   return (
     <section id="quality" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -476,7 +498,7 @@ function QualityAssurance() {
             className="relative"
           >
             <img
-              src="/placeholder.svg?height=500&width=600"
+              src="/quality.png?height=500&width=600"
               alt="Quality control process"
               className="rounded-lg shadow-xl"
             />

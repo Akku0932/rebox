@@ -45,12 +45,15 @@ export default function ProductsPage() {
     { id: 15, name: "Partial", category: "stickers", image: "/part.jpg", description: "Partial stickers for selective application.", features: ["Selective", "Customizable", "Easy Peel"], href: "/products/stickers" },
     { id: 16, name: "Stitchable", category: "stickers", image: "/stch_able_stciker.jpg", description: "Stitchable stickers for fabric and apparel.", features: ["Sewable", "Flexible", "Custom Shapes"], href: "/products/stickers" },
     { id: 17, name: "Heat Fusing", category: "stickers", image: "/heat_fusing_sticker.jpg", description: "Heat fusing stickers for durable adhesion.", features: ["Heat Seal", "Durable", "Customizable"], href: "/products/stickers" },
-    { id: 18, name: "Dashboard", category: "stickers", image: "/dashboard_decals.jpg", description: "Dashboard stickers for automotive and industrial use.", features: ["Automotive", "Industrial", "Custom Print"], href: "/products/stickers" },
     { id: 19, name: "Graphics/Decals", category: "stickers", image: "/dashboard_decals.jpg", description: "Custom graphics and decals for versatile applications.", features: ["Graphics", "Decals", "Customizable"], href: "/products/stickers" },
+    { id: 20, name: "Polycarbonate", category: "stickers", image: "/PC.png", description: "Premium polycarbonate dome stickers with 3D effect for enhanced visual appeal and durability.", features: ["3D Effect", "Premium", "Durable"], href: "/products/stickers" },
+    { id: 21, name: "Vinyl Sticker", category: "stickers", image: "/safety.jpg", description: "High-quality vinyl stickers for outdoor and indoor applications with excellent durability.", features: ["Weather Resistant", "Durable", "Customizable"], href: "/products/stickers" },
+    { id: 22, name: "PC Front Sticker", category: "stickers", image: "/front.png", description: "Premium polycarbonate front stickers with crystal clear finish for enhanced visibility.", features: ["Crystal Clear", "Premium", "High Visibility"], href: "/products/stickers" },
+    
     // POP's
-    { id: 20, name: "Commercial Print", category: "pops", image: "/commercial_prints.jpg", description: "High-quality commercial print solutions for all needs.", features: ["High Quality", "Custom Print", "Bulk"], href: "/products/pops" },
-    { id: 21, name: "Blister Cards", category: "pops", image: "/blister_cards.jpg", description: "Custom blister cards for secure and attractive product display.", features: ["Secure", "Display", "Customizable"], href: "/products/pops" },
-    { id: 22, name: "Panel Overlays", category: "pops", image: "/panel_overlays.jpg", description: "Durable panel overlays for industrial and commercial use.", features: ["Durable", "Custom Print", "Industrial"], href: "/products/pops" },
+    { id: 23, name: "Commercial Print", category: "pops", image: "/commercial_prints.jpg", description: "High-quality commercial print solutions for all needs.", features: ["High Quality", "Custom Print", "Bulk"], href: "/products/pops" },
+    { id: 24, name: "Blister Cards", category: "pops", image: "/blister_cards.jpg", description: "Custom blister cards for secure and attractive product display.", features: ["Secure", "Display", "Customizable"], href: "/products/pops" },
+    { id: 25, name: "Panel Overlays", category: "pops", image: "/panel_overlays.jpg", description: "Durable panel overlays for industrial and commercial use.", features: ["Durable", "Custom Print", "Industrial"], href: "/products/pops" },
   ]
 
   const filteredProducts = products.filter((product) => {
@@ -273,7 +276,7 @@ function ProductListItem({ product }: { product: any }) {
           <div className="flex">
             <div className="relative w-32 md:w-48 h-24 md:h-32 overflow-hidden">
               <img
-                src={product.image ? product.image : "/placeholder.svg"}
+                src={product.image ? product.image : "/Greener_Future.png"}
                 alt={product.name}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
