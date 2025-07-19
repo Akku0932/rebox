@@ -54,7 +54,7 @@ function HeroSection() {
 
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
             Reboxes India Pvt. Ltd. transforms sustainable materials into premium packaging solutions. Founded in 2020
-            in Noida, we specialize in custom pouches, stickers, labels, and eco-friendly packaging.
+            in Noida, we specialize in custom , stickers, labels, and eco-friendly packaging.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

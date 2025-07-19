@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Reboxes India - Sustainable Packaging Solutions",
   description:
-    "Premium custom packaging solutions from Reboxes India Pvt. Ltd. Eco-friendly boxes, pouches, and specialty packaging since 2020.",
+    "Premium custom packaging solutions from Reboxes India Pvt. Ltd. Eco-friendly boxes, and specialty packaging since 2020.",
   keywords: "packaging, boxes, sustainable, eco-friendly, custom printing, Noida, India",
     generator: 'v0.dev'
 }

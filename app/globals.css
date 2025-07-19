@@ -124,6 +124,18 @@ html {
 
 }
 
+<<<<<<< HEAD
+html, body {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-y: auto !important;
+}
+
+body, #__next, main, div[role="main"] {
+  outline: 2px solid red !important;
+}
+
+=======
 
 
 html, body {
@@ -146,6 +158,7 @@ body, #__next, main, div[role="main"] {
 
 
 
+>>>>>>> e9e8336ff83885363a93fdb9d50eeec0bccc4b6a
 .transform-gpu {
 
   transform: translate3d(0, 0, 0);

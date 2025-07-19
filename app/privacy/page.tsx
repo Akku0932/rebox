@@ -36,7 +36,11 @@ export default function PrivacyPolicyPage() {
             <p className="mb-4 text-gray-700">We may update this Privacy Policy from time to time. The latest version will always be available on our website.</p>
             <h2 className="text-xl font-semibold mt-8 mb-2">8. Contact Us</h2>
             <p className="mb-2 text-gray-700">If you have any questions or concerns about our Privacy Policy, please contact us at:</p>
+<<<<<<< HEAD
+            <p className="text-gray-700">info@reboxes.in</p>
+=======
             <p className="text-gray-700">info@reboxesindia.com</p>
+>>>>>>> e9e8336ff83885363a93fdb9d50eeec0bccc4b6a
           </CardContent>
         </Card>
       </div>

@@ -11,7 +11,7 @@ export function Footer() {
       icon: MapPin,
       title: "Address",
       details: [
-        "Reboxes India Private Limited",
+        "Reboxes India Pvt. Ltd.",
         "K-46 Site 5 Kasna, Greater Noida,",
         "Uttar Pradesh, India",
         "PIN: 201301",
@@ -86,23 +86,21 @@ export function Footer() {
               />
 
               <p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
-              Reboxes India Private Limited Ltd. is a leading manufacturer of sustainable packaging solutions, committed to
+                Reboxes India Pvt. Ltd. is a leading manufacturer of sustainable packaging solutions, committed to
                 protecting both your products and our planet through innovative, eco-friendly designs.
               </p>
 
               <div className="space-y-3 mb-6">
                 <div className="flex items-start space-x-3 text-gray-400 text-sm sm:text-base">
                   <MapPin className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                  <span>Reboxes India Private Limited K-46 Site 5 Kasna, Greater Noida, Uttar Pradesh, India PIN: 201301</span>
+                  <span>Reboxes India Pvt. Ltd. K-46 Site 5 Kasna, Greater Noida, Uttar Pradesh, India PIN: 201301</span>
                 </div>
                 <div className="flex items-start space-x-3 text-gray-400 text-sm sm:text-base">
                   <Phone className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                   <div className="flex flex-col sm:flex-row sm:space-x-2">
-                    <span>+91 9810487993</span>
+                    <span>++91 9810487993</span>
                     <span className="hidden sm:inline">,</span>
                     <span>+91 9871521501</span>
-                    <span className="hidden sm:inline">,</span>
-                    <span>1800 8898 842</span>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3 text-gray-400 text-sm sm:text-base">
@@ -188,7 +186,7 @@ export function Footer() {
         <div className="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-xs sm:text-sm text-center md:text-left">
-              <p>&copy; 2025 Reboxes India Private Limited All rights reserved. | CIN: U21000UP2020PTC131548</p>
+              <p>&copy; 2025 Reboxes India Pvt. Ltd. All rights reserved. | CIN: U21000UP2020PTC131548</p>
               <p className="mt-1">Paper & Paper Products | Packaging & Print Solutions | Founded: July 23, 2020</p>
             </div>
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 text-xs sm:text-sm text-gray-400">

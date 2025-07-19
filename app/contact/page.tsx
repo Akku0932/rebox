@@ -333,7 +333,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Reboxes India Private Limited Map"
+                  title="Reboxes India Pvt. Ltd. Map"
                 ></iframe>
               </div>
               <CardContent className="p-8">
@@ -344,7 +344,7 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-gray-900">Address</p>
                       <p className="text-gray-600">
-                        Reboxes India Private Limited.<br />
+                        Reboxes India Pvt. Ltd.<br />
                         K-46 Site 5 Kasna, Greater Noida,<br />
                         Uttar Pradesh, India<br />
                         PIN: 201301
@@ -379,7 +379,7 @@ function ContactInfoCard() {
       icon: MapPin,
       title: "Address",
       details: [
-        "Reboxes India Private Limited",
+        "Reboxes India Pvt. Ltd.",
         "K-46 Site 5 Kasna, Greater Noida,",
         "Uttar Pradesh, India",
         "PIN: 201301",
