@@ -333,7 +333,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Reboxes India Pvt. Ltd. Map"
+                  title="Reboxes India Private Limited Map"
                 ></iframe>
               </div>
               <CardContent className="p-8">
@@ -344,7 +344,7 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-gray-900">Address</p>
                       <p className="text-gray-600">
-                        Reboxes India Pvt. Ltd.<br />
+                        Reboxes India Private Limited.<br />
                         K-46 Site 5 Kasna, Greater Noida,<br />
                         Uttar Pradesh, India<br />
                         PIN: 201301
@@ -379,7 +379,7 @@ function ContactInfoCard() {
       icon: MapPin,
       title: "Address",
       details: [
-        "Reboxes India Pvt. Ltd.",
+        "Reboxes India Private Limited",
         "K-46 Site 5 Kasna, Greater Noida,",
         "Uttar Pradesh, India",
         "PIN: 201301",
@@ -388,12 +388,12 @@ function ContactInfoCard() {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+91 9873666034", "+91 9871521501"],
+      details: ["+91 9810487993", "+91 9871521501", "1800 8898 842"],
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@reboxesindia.com", "sales@reboxesindia.com"],
+      details: ["info@reboxes.in"],
     },
   ]
 

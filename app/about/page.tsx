@@ -144,18 +144,15 @@ function CompanyOverview() {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Story</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">About us</h3>
               <p className="text-gray-600 mb-4">
-                Founded on July 23, 2020, in the bustling city of Noida, Uttar Pradesh, Reboxes India Pvt. Ltd. emerged
-                with a clear vision: to revolutionize the packaging industry through sustainable innovation.
+              REBOXES INDIA as a one stop solution provider to its customers. Company's incorporation of various print technologies like - Offset, Digital & Label printing in roll to roll classify REBOXES INDIA, as an exclusive printer to be able to cater to all the printing & packaging needs of customers under a single roof. The company is equipped with latest and best of line automated machines supported by in-house testing and quality assurance facilities to produce quality products. REBOXES INDIA continual efforts in cost effective operations, product up gradation, new product development, innovation and technology has led the company not only to be able to provide innovative products and solutions from time to time to its customers but maintain long term relationships with them by shear consistency in quality and services. REBOXES INDIA one of the best machinery from JAPAN GERMANY & ITALY.
               </p>
               <p className="text-gray-600 mb-4">
-                Operating under CIN U21000UP2020PTC131548, we specialize in the manufacturing of paper products, custom
-                boxes, and cartons, serving the paper & paper-products sector with dedication and expertise.
+              
               </p>
               <p className="text-gray-600">
-                Our commitment to sustainability and quality has made us a trusted partner for businesses seeking
-                eco-friendly packaging solutions that don't compromise on durability or aesthetics.
+             
               </p>
             </div>
             <div className="relative">
@@ -336,7 +333,7 @@ function TeamSection() {
       description: "Visionary leader with 15+ years in packaging industry",
     },
     {
-      name: "Pinki Tyagi",
+      name: "Krishna kumar",
       position: "Head of Operations",
       image: "/placeholder.svg?height=300&width=300",
       description: "Operations expert ensuring quality and efficiency",
@@ -348,7 +345,7 @@ function TeamSection() {
       description: "Environmental advocate driving our green initiatives",
     },
     {
-      name: "Sneha Gupta",
+      name: "Shourya",
       position: "Design Manager",
       image: "/placeholder.svg?height=300&width=300",
       description: "Creative professional bringing brands to life",
